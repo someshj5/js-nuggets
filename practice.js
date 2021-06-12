@@ -99,7 +99,7 @@ let keyName = "computer";
 
 app[keyName] = "apple";
 
-console.log(app);
+//console.log(app);
 
 // React UseSate internal
 
@@ -116,5 +116,20 @@ function updateState(key, value) {
 updateState("name", "bob");
 updateState("job", "developer");
 updateState("loading", false);
+updateState("products", []);
 
-console.log(state);
+//console.log(state); // {loading: false, name: "bob", job: "developer",products:[]}
+
+const youngPeople = people.filter((person) => person.age < 30);
+//console.log(youngPeople); // [{name: "bob", age: 20, position: "developer"}, {name: "Doe", age: 25, position: "designer"} ,{name: "Venna", age: 18, position: "Intern"}]
+
+const developers = people.filter((person) => person.position === "developer");
+// console.log(developers); // [{name: "bob", age: 20, position: "developer"}]
+const oldPeople = people.filter((person) => person.age > 35);
+console.log(oldPeople); // []
+
+const bob = people.find((person) => person.name === "bob");
+// find returns a object or string else undefined
+console.log(bob); // {name: "bob", age: 20, position: "developer"}
+const mob = people.find((person) => person.name === "mob");
+console.log(mob); // undefined
