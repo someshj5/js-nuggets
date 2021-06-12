@@ -79,5 +79,12 @@ const newPeople = people.map((person) => {
 const div = document.querySelector("#result");
 // div.innerHTML = names.join("");
 
-const category = [...new Set(menu.map((item) => `<h2>${item.category}</h2>`))];
-// div.innerHTML = category.join("");
+const category = [
+  ...new Set(
+    menu.map(
+      (item) =>
+        `<button class="ml-2 bg-danger text-white ">${item.category}</button>`
+    )
+  ),
+];
+div.innerHTML = category.join("");
