@@ -3,26 +3,31 @@ const people = [
     name: "bob",
     age: 20,
     position: "developer",
+    salary: 200,
   },
   {
     name: "John",
     age: 30,
     position: "sr.developer",
+    salary: 400,
   },
   {
     name: "Doe",
     age: 25,
     position: "designer",
+    salary: 100,
   },
   {
     name: "Jane",
     age: 34,
     position: "Boss",
+    salary: 900,
   },
   {
     name: "Venna",
     age: 18,
     position: "Intern",
+    salary: 70,
   },
 ];
 
@@ -60,6 +65,318 @@ const menu = [
     category: "Lunch",
   },
 ];
+
+let coffeehouse = {
+  success: true,
+  message: "successfull",
+  data: [
+    {
+      id: 0,
+      name: "Corporate",
+      address: "624 Broadway",
+      city: "San Diego",
+      state: "CA",
+      email: "corporate@coffeehouse.com",
+      amenities: [],
+    },
+    {
+      id: 1,
+      name: "Downtown",
+      address: "Horton Plaza",
+      city: "San Diego",
+      state: "CA",
+      email: "downtown@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 3,
+          name: "cakes",
+          description: "cake  service in store",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Uptown",
+      address: "1240 University Ave",
+      city: "San Diego",
+      state: "CA",
+      email: "uptown@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+        {
+          id: 5,
+          name: "golf",
+          description: "golf service in store",
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Midtown",
+      address: "784 W Washington St",
+      city: "SanDiego",
+      state: "CA",
+      email: "midtown@coffeehouse.com",
+      amenities: [],
+    },
+    {
+      id: 4,
+      name: "Corporate2",
+      address: "634 Broadway",
+      city: "San Diego",
+      state: "CA",
+      email: "corporate@coffeehouse.com",
+      amenities: [],
+    },
+    {
+      id: 5,
+      name: "CCD",
+      address: "624 Broadway",
+      city: "",
+      state: "CA",
+      email: "ccd@coffeehouse.com",
+      amenities: [],
+    },
+    {
+      id: 8,
+      name: "Bleekers cafe",
+      address: "77A Bleekers street",
+      city: "New York",
+      state: "AM",
+      email: "bleekers@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+      ],
+    },
+    {
+      id: 9,
+      name: "Bleekers cafe",
+      address: "77A Bleekers street",
+      city: "New York",
+      state: "AM",
+      email: "bleekers@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+      ],
+    },
+    {
+      id: 10,
+      name: "Bleekers cafe",
+      address: "77A Bleekers street",
+      city: "New York",
+      state: "AM",
+      email: "bleekers@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+      ],
+    },
+    {
+      id: 11,
+      name: "Malbu cafe",
+      address: "77A Malibu street",
+      city: "New York",
+      state: "AM",
+      email: "malibu@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+      ],
+    },
+    {
+      id: 12,
+      name: "Malbu cafe",
+      address: "77A Malibu street",
+      city: "New York",
+      state: "AM",
+      email: "malibu@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 2,
+          name: "pary_room",
+          description: "party_room service in store",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+      ],
+    },
+    {
+      id: 13,
+      name: "Malbu cafe",
+      address: "77A Malibu street",
+      city: "New York",
+      state: "AM",
+      email: "malibu@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 2,
+          name: "pary_room",
+          description: "party_room service in store",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+      ],
+    },
+    {
+      id: 14,
+      name: "Hammer cafe",
+      address: "77A Hammer street",
+      city: "New York",
+      state: "AM",
+      email: "hammer@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 2,
+          name: "pary_room",
+          description: "party_room service in store",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+      ],
+    },
+    {
+      id: 15,
+      name: "Hammer cafe",
+      address: "77A Hammer street",
+      city: "New York",
+      state: "AM",
+      email: "hammer@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 2,
+          name: "pary_room",
+          description: "party_room service in store",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+      ],
+    },
+    {
+      id: 16,
+      name: "Hammer cafe",
+      address: "77A Hammer street",
+      city: "New York",
+      state: "AM",
+      email: "hammer@coffeehouse.com",
+      amenities: [
+        {
+          id: 1,
+          name: "Wifi",
+          description: "Wifi service for internet",
+        },
+        {
+          id: 2,
+          name: "pary_room",
+          description: "party_room service in store",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+      ],
+    },
+    {
+      id: 17,
+      name: "Corporate2",
+      address: "624 Broadway 2",
+      city: "San Diegooo",
+      state: "CA",
+      email: "corporate2@coffeehouse.com",
+      amenities: [],
+    },
+    {
+      id: 18,
+      name: "Corporate3",
+      address: "624 Broadway 3",
+      city: "San Diegooo2",
+      state: "CA",
+      email: "corporate3@coffeehouse.com",
+      amenities: [
+        {
+          id: 2,
+          name: "pary_room",
+          description: "party_room service in store",
+        },
+        {
+          id: 4,
+          name: "bike track",
+          description: "bike tracks in parking",
+        },
+      ],
+    },
+    {
+      id: 19,
+      name: "Corporate",
+      address: "624 Broadway",
+      city: "San Diego",
+      state: "CA",
+      email: "corporate@coffeehouse.com",
+      amenities: [],
+    },
+  ],
+  total_count: 18,
+};
 
 const getAges = (person) => {
   return person.age * 2;
@@ -133,3 +450,9 @@ const bob = people.find((person) => person.name === "bob");
 // console.log(bob); // {name: "bob", age: 20, position: "developer"}
 const mob = people.find((person) => person.name === "mob");
 // console.log(mob); // undefined
+
+const totalwage = people.reduce((acc, person) => {
+  return (acc += person.salary);
+}, 0);
+
+console.log(totalwage);
