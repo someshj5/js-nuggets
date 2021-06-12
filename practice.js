@@ -88,3 +88,33 @@ const category = [
   ),
 ];
 div.innerHTML = category.join("");
+
+let appState = "loading";
+
+const app = {
+  [appState]: true,
+};
+
+let keyName = "computer";
+
+app[keyName] = "apple";
+
+console.log(app);
+
+// React UseSate internal
+
+const state = {
+  loading: true,
+  name: "",
+  job: "",
+};
+
+function updateState(key, value) {
+  state[key] = value;
+}
+
+updateState("name", "bob");
+updateState("job", "developer");
+updateState("loading", false);
+
+console.log(state);
