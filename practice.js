@@ -126,10 +126,10 @@ const youngPeople = people.filter((person) => person.age < 30);
 const developers = people.filter((person) => person.position === "developer");
 // console.log(developers); // [{name: "bob", age: 20, position: "developer"}]
 const oldPeople = people.filter((person) => person.age > 35);
-console.log(oldPeople); // []
+// console.log(oldPeople); // []
 
 const bob = people.find((person) => person.name === "bob");
 // find returns a object or string else undefined
-console.log(bob); // {name: "bob", age: 20, position: "developer"}
+// console.log(bob); // {name: "bob", age: 20, position: "developer"}
 const mob = people.find((person) => person.name === "mob");
-console.log(mob); // undefined
+// console.log(mob); // undefined
