@@ -491,8 +491,8 @@ const letters = [...udemy];
 // console.log(letters); //["u", "d", "e", "m", "y"]
 
 const friends = [...boys, bestfriend, ...girls];
-console.log(friends);
+// console.log(friends);
 
 const updatedBob = { updated: true, ...bob_data };
-console.log(bob_data);
-console.log(updatedBob);
+// console.log(bob_data);
+// console.log(updatedBob);
