@@ -455,4 +455,30 @@ const totalwage = people.reduce((acc, person) => {
   return (acc += person.salary);
 }, 0);
 
-console.log(totalwage);
+// console.log(totalwage);
+
+const bob_data = {
+  first: "bob",
+  last: "marley",
+  city: "chicago",
+  siblings: { sister: "jane" },
+  age: 20,
+  position: "developer",
+};
+
+const {
+  first: firstName,
+  last: lastName,
+  city: residence,
+  siblings: { sister: favoriteSibling },
+  age,
+  position,
+} = bob_data;
+
+// console.log(firstName, lastName, residence, favoriteSibling, age, position);
+
+function printPerson({ first, last, age, siblings: { sister } }) {
+  console.log(first, last, sister); // bob marley jane
+}
+
+printPerson(bob_data);
