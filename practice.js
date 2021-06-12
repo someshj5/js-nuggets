@@ -26,6 +26,41 @@ const people = [
   },
 ];
 
+const menu = [
+  {
+    id: 1,
+    category: "Breakfast",
+  },
+  {
+    id: 2,
+    category: "Lunch",
+  },
+  {
+    id: 3,
+    category: "Dinner",
+  },
+  {
+    id: 4,
+    category: "Eve-meal",
+  },
+  {
+    id: 5,
+    category: "Snacks",
+  },
+  {
+    id: 6,
+    category: "Snacks",
+  },
+  {
+    id: 7,
+    category: "Dinner",
+  },
+  {
+    id: 8,
+    category: "Lunch",
+  },
+];
+
 const getAges = (person) => {
   return person.age * 2;
 };
@@ -43,3 +78,6 @@ const newPeople = people.map((person) => {
 
 const div = document.querySelector("#result");
 div.innerHTML = names.join("");
+
+const category = [...new Set(menu.map((item) => `<h2>${item.category}</h2>`))];
+div.innerHTML = category.join("");
