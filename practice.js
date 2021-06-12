@@ -481,4 +481,18 @@ function printPerson({ first, last, age, siblings: { sister } }) {
   console.log(first, last, sister); // bob marley jane
 }
 
-printPerson(bob_data);
+// printPerson(bob_data);
+const udemy = "udemy";
+const boys = ["bob", "ram", "van", "dam"];
+const girls = ["alice", "sabrina", "nirobi", "raquel"];
+const bestfriend = "arnold";
+
+const letters = [...udemy];
+// console.log(letters); //["u", "d", "e", "m", "y"]
+
+const friends = [...boys, bestfriend, ...girls];
+console.log(friends);
+
+const updatedBob = { updated: true, ...bob_data };
+console.log(bob_data);
+console.log(updatedBob);
