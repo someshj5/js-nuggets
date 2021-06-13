@@ -404,7 +404,7 @@ const category = [
     )
   ),
 ];
-div.innerHTML = category.join("");
+// div.innerHTML = category.join("");
 
 let appState = "loading";
 
@@ -496,3 +496,94 @@ const friends = [...boys, bestfriend, ...girls];
 const updatedBob = { updated: true, ...bob_data };
 // console.log(bob_data);
 // console.log(updatedBob);
+
+const fruits = ["apple", "oranges", "lemon", "banana", "pear"];
+
+const [first, second, ...rest] = fruits;
+// console.log(first, second, rest); // apple oranges ["lemon", "banana", "pear"]
+const restOfTheFruits = rest.find((fruit) => fruit == "banana");
+// console.log(restOfTheFruits); // banana
+const findOrange = rest.find((fruit) => fruit == "oranges");
+// console.log(findOrange); // undefined
+
+const { city, ...restoftheobj } = bob_data;
+// console.log(city, restoftheobj); // chicago {first: "bob", last: "marley", siblings: {…}, age: 20, position: "developer"}
+
+// cart example
+
+const cart = [
+  {
+    title: "Samsung Galaxy S7",
+    price: 599.99,
+    amount: 1,
+  },
+  {
+    title: "google Pixel",
+    price: 499.99,
+    amount: 2,
+  },
+  {
+    title: "Nokia Lumia 1040",
+    price: 599.99,
+    amount: 3,
+  },
+  {
+    title: "Xiaomi Redmi Note7",
+    price: 699.99,
+    amount: 4,
+  },
+  {
+    title: "Xiaomi Redmi Note5",
+    price: 399.99,
+    amount: 3,
+  },
+];
+
+const cartTotal = cart.reduce((total, item) => {
+  return (total += item.price);
+}, 0);
+
+let { totalItems, carttotal } = cart.reduce(
+  (total, cartItem) => {
+    const { amount, price } = cartItem;
+    total.totalItems += amount;
+    total.carttotal += amount * price;
+    return total;
+  },
+  {
+    totalItems: 0,
+    carttotal: 0,
+  }
+);
+
+carttotal = parseFloat(carttotal.toFixed(2));
+// console.log(totalItems, carttotal);
+// console.log("cartTotal:", total);
+
+const url = "https://api.github.com/users/john-smilga/repos?per_page=100"; // https://api.github.com/users/someshj5/repos?per_page=100
+
+const fetchRepos = async () => {
+  const response = await fetch(url);
+  const data = await response.json();
+  const newData = data.reduce((total, repo) => {
+    const { language } = repo;
+    // if (language) {
+    //   if (total[language]) {
+    //     total[language] += 1;
+    //   } else {
+    //     total[language] = 1;
+    //   }
+    // }
+    if (language) {
+      total[language] = total[language] + 1 || 1;
+      // ? (total[language] += 1)
+      // : (total[language] = 1);
+    }
+
+    return total;
+  }, {});
+  // console.log(newData);
+  // console.log(data);
+};
+
+fetchRepos();
