@@ -586,4 +586,24 @@ const fetchRepos = async () => {
   // console.log(data);
 };
 
-fetchRepos();
+// fetchRepos();
+
+const text = document.querySelectorAll(".text");
+// console.log(text);
+const newText = Array.from(text).find((item) => item.textContent === "person");
+
+// console.log(newText);
+
+const items = Array.from({ length: 120 }, (_, idx) => {
+  return idx;
+});
+
+const itemsPerpage = 10;
+const pages = Math.ceil(items.length / itemsPerpage);
+
+const newItems = Array.from({ length: pages }, (_, idx) => {
+  const start = idx * itemsPerpage;
+  const tempItems = items.slice(start, start + itemsPerpage);
+  return tempItems;
+});
+console.log(newItems);
