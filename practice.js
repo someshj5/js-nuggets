@@ -592,7 +592,7 @@ const text = document.querySelectorAll(".text");
 // console.log(text);
 const newText = Array.from(text).find((item) => item.textContent === "person");
 
-// console.log(newText);
+console.log(newText);
 
 const items = Array.from({ length: 120 }, (_, idx) => {
   return idx;
