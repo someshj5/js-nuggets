@@ -626,7 +626,7 @@ const randomUser = [
         longitude: "-7.9310",
       },
       timezone: {
-        offset: "-3:30",
+        // offset: "-3:30",
         description: "Newfoundland",
       },
     },
