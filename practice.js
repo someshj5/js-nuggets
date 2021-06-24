@@ -592,7 +592,7 @@ const text = document.querySelectorAll(".text");
 // console.log(text);
 const newText = Array.from(text).find((item) => item.textContent === "person");
 
-console.log(newText);
+// console.log(newText);
 
 const items = Array.from({ length: 120 }, (_, idx) => {
   return idx;
@@ -626,7 +626,7 @@ const randomUser = [
         longitude: "-7.9310",
       },
       timezone: {
-        // offset: "-3:30",
+        offset: "-3:30",
         description: "Newfoundland",
       },
     },
