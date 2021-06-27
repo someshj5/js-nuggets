@@ -627,7 +627,7 @@ const randomUser = [
       },
       timezone: {
         // offset: "-3:30",
-        description: "Newfoundland",
+        // description: "Newfoundland",
       },
     },
     email: "brad.gibson@example.com",
