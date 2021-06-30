@@ -622,7 +622,7 @@ const randomUser = [
       state: "waterford",
       postcode: "93027",
       coordinates: {
-        // latitude: "20.9267",
+        latitude: "20.9267",
         longitude: "-7.9310",
       },
       timezone: {
