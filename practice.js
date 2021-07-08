@@ -620,7 +620,7 @@ const randomUser = [
       street: "9278 new road",
       city: "kilcoole",
       state: "waterford",
-      // postcode: "93027",
+      postcode: "93027",
       coordinates: {
         latitude: "20.9267",
         longitude: "-7.9310",
