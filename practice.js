@@ -606,7 +606,7 @@ const newItems = Array.from({ length: pages }, (_, idx) => {
   const tempItems = items.slice(start, start + itemsPerpage);
   return tempItems;
 });
-// console.log(newItems);
+console.log(newItems);
 
 const randomUser = [
   {
